@@ -1,6 +1,7 @@
 package com.oneofone.legacylink
 
-import android.annotation.SuppressLint
+
+import com.oneofone.legacylink.R
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
@@ -20,7 +21,7 @@ class SecondActivity : AppCompatActivity() {
     private lateinit var answerTextView : TextView
     private lateinit var infoTextView: TextView
 
-    @SuppressLint("MissingInflatedId")
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
