@@ -77,20 +77,35 @@ class SecondActivity : AppCompatActivity() {
             if (answer !=null && age in 20..100) {
                 // creating a list which numbers are assigned to figures
                 val figureinfo = when (age) {
+                    // Walbank, F
                     20 -> "Alexander the great. He was a Macedonian king and a military leader."
+                    // Ray, M
                     25 -> "Tupac Shakur. He was a legendary rapper and actor."
+                    // Duignan
                     27 -> "Steve Irwin. He was a renowned wildlife expert."
+                    // Britannica
                     36 -> "Marilyn Monroe was a iconic Hollywood actress and model."
+                    // Britannica
                     37 -> "Vincent van Gogh was a very influential Dutch painter."
+                    // Biography
                     40 -> "Paul Walker. He was famous and a beloved Hollywood actor known for his role in the Fast and Furious franchise."
+                    // Britannica
                     50 -> "Michael Jackson. The King of Pop."
+                    // Carson, T
                     69 -> "David Bowie was an iconic musician"
+                    // Nicholas, G
                     70 -> "Winston Churchill. He was a great former Prime Minister of the United Kingdom, who led Britain to victory in the second world war."
+                    // Britannica
                     76 -> "Albert Einstein, a theoretical physicist who revolutionized physics"
+                    // Biography
                     80 -> "Marlon Brando. He was a famous actor and icon"
+                    // Britannica
                     82 -> "Frank Sinatra was a famous singer"
+                    // Britannica
                     86 -> "Nikola Tesla. An inventor and electrical engineer who pioneered electrical power system that provides electricity for homes and buildings"
+                    // Britannica
                     95 -> "Nelson Mandela. He was an anti-apartheid revolutionary and former President of South Africa."
+                    // Britannica
                     96 -> "Queen Elizabeth was the former queen of United Kingdom"
                     else -> ""
                 }
