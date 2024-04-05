@@ -41,9 +41,9 @@ class SecondActivity : AppCompatActivity() {
 
         //Button execution
         btnCheck.setOnClickListener {
-
+            // assigning ageInput as an integer
             val age = ageInput.text.toString().toIntOrNull()
-
+            // creating a range for the list to sit in
             if (age !=null && age in 20..100){
 
                 val figure = when (age){
@@ -64,17 +64,18 @@ class SecondActivity : AppCompatActivity() {
                     96 -> "Queen Elizabeth"
                     else -> "No historical figure found for age $age"
                 }
-                val name = figure
-                answerTextView.text = name
+                answerTextView.text = figure
 
             } else {
+                // clear answerTextView
+                answerTextView.text = ""
                 Toast.makeText(this, "Please enter a valid age between 20 and 100.", Toast.LENGTH_SHORT).show()
             }
-
+            // setting ageInput to a integer and if fails it will hold  null. this is stored to answer
             val answer = ageInput.text.toString().toIntOrNull()
 
             if (answer !=null && age in 20..100) {
-
+                // creating a list which numbers are assigned to figures
                 val figureinfo = when (age) {
                     20 -> "Alexander the great. He was a Macedonian king and a military leader."
                     25 -> "Tupac Shakur. He was a legendary rapper and actor."
@@ -93,12 +94,17 @@ class SecondActivity : AppCompatActivity() {
                     96 -> "Queen Elizabeth was the former queen of United Kingdom"
                     else -> ""
                 }
-                val info = figureinfo
-                infoTextView.text = info
+                // displaying the list on infoTextView
+                infoTextView.text = figureinfo
+            } else {
+                // infoTextView Clears
+                infoTextView.text = ""
             }
+            // clears ageInput Field
             ageInput.setText("")
         }
         btnClear.setOnClickListener {
+            // clears both answer and info TextView
             infoTextView.text = ""
             answerTextView.text = ""
         }
